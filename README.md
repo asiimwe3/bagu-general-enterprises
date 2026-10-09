@@ -1,5 +1,7 @@
 # Bagu General Enterprises Ltd
 
+![Bagu General Enterprises logo](images/logo_full.png)
+
 Official website of Bagu General Enterprises Ltd — Dealers in Hardware, Transport, Construction and General Suppliers.
 
 **Live site:** https://asiimwe3.github.io/bagu-general-enterprises/
