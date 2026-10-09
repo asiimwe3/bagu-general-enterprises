@@ -134,6 +134,18 @@
   footer .tag{color:#ff8a91;font-weight:700;font-size:.8rem;letter-spacing:1.6px;text-transform:uppercase;margin-bottom:10px}
   footer a{color:#ff8a91}
 
+
+  .mach{background:var(--navy)}
+  .mach .sec-head h2{color:#fff}
+  .mach .sec-head p{color:#b8c6d9}
+  .mach-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .mach-card{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:4/3;box-shadow:0 10px 24px rgba(0,0,0,.35)}
+  .mach-card img{width:100%;height:100%;object-fit:cover;transition:.4s}
+  .mach-card:hover img{transform:scale(1.08)}
+  .mach-card::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(6,13,28,.85))}
+  .mach-card .lbl{position:absolute;left:14px;right:14px;bottom:12px;z-index:2;color:#fff;font-weight:800;font-size:.98rem;letter-spacing:.4px}
+  .mach-card .lbl small{display:block;font-weight:600;font-size:.72rem;letter-spacing:1.6px;color:#ff8a91;text-transform:uppercase;margin-bottom:2px}
+  .mach-note{margin-top:18px;color:#93a4b8;font-size:.8rem}
   .wa-float{position:fixed;right:16px;bottom:16px;z-index:60;background:#25d366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.6rem;box-shadow:0 8px 20px rgba(0,0,0,.28)}
 
   @media(max-width:840px){
@@ -159,6 +171,7 @@
     <button class="burger" aria-label="Menu" onclick="document.querySelector('nav').classList.toggle('open')">&#9776;</button>
     <nav onclick="this.classList.remove('open')">
       <a href="#services">Services</a>
+      <a href="#machinery">Machinery</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
       <a class="btn" href="tel:+256772433687">Call Now</a>
@@ -222,6 +235,28 @@
         <div class="body"><h3>General Suppliers</h3><p>General supply of goods to individuals, businesses and institutions.</p><a class="lnk" href="#contact">Place a supply order &#8594;</a></div>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="mach" id="machinery">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Machinery &amp; Equipment</div>
+      <h2>Construction Machinery<br>on Ugandan Sites</h2>
+      <p>The machines that build roads, foundations and structures across Uganda. Ask us about supplying materials and equipment for your project.</p>
+      <div class="rule"></div>
+    </div>
+    <div class="mach-grid">
+      <div class="mach-card"><img src="images/mach_excavator.jpg" alt="Excavator" loading="lazy"><div class="lbl"><small>Earthmoving</small>Excavator</div></div>
+      <div class="mach-card"><img src="images/mach_loader.jpg" alt="Wheel loader" loading="lazy"><div class="lbl"><small>Earthmoving</small>Wheel Loader</div></div>
+      <div class="mach-card"><img src="images/mach_backhoe.jpg" alt="Backhoe loader" loading="lazy"><div class="lbl"><small>Earthmoving</small>Backhoe Loader</div></div>
+      <div class="mach-card"><img src="images/mach_grader.jpg" alt="Motor grader" loading="lazy"><div class="lbl"><small>Road Works</small>Motor Grader</div></div>
+      <div class="mach-card"><img src="images/mach_roller.jpg" alt="Road roller" loading="lazy"><div class="lbl"><small>Road Works</small>Road Roller</div></div>
+      <div class="mach-card"><img src="images/mach_tipper.jpg" alt="Tipper truck" loading="lazy"><div class="lbl"><small>Haulage</small>Tipper Truck</div></div>
+      <div class="mach-card"><img src="images/mach_mixer.jpg" alt="Concrete mixer truck" loading="lazy"><div class="lbl"><small>Concrete</small>Concrete Mixer</div></div>
+      <div class="mach-card"><img src="images/mach_crane.jpg" alt="Tower crane" loading="lazy"><div class="lbl"><small>Lifting</small>Tower Crane</div></div>
+    </div>
+    <p class="mach-note">Photos are illustrative of machinery commonly used in the construction industry.</p>
   </div>
 </section>
 
