@@ -135,6 +135,13 @@
   footer a{color:#ff8a91}
 
 
+
+  .hw{background:#fff}
+  .hw-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+  .hwg{background:var(--cream);border-radius:10px;padding:18px 16px;border-left:4px solid var(--red)}
+  .hwg h4{color:var(--navy);font-size:1rem;font-weight:800;margin-bottom:10px;letter-spacing:.3px}
+  .chips{display:flex;flex-wrap:wrap;gap:7px}
+  .chip{background:#fff;border:1px solid #ddd8ca;border-radius:20px;padding:5px 12px;font-size:.82rem;font-weight:600;color:#333d49}
   .mach{background:var(--navy)}
   .mach .sec-head h2{color:#fff}
   .mach .sec-head p{color:#b8c6d9}
@@ -171,6 +178,7 @@
     <button class="burger" aria-label="Menu" onclick="document.querySelector('nav').classList.toggle('open')">&#9776;</button>
     <nav onclick="this.classList.remove('open')">
       <a href="#services">Services</a>
+      <a href="#hardware">Hardware</a>
       <a href="#machinery">Machinery</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
@@ -213,7 +221,7 @@
   <div class="wrap">
     <div class="sec-head">
       <div class="kicker">What We Do</div>
-      <h2>Four Lines of Business,<br>One Registered Company</h2>
+      <h2>Five Lines of Business,<br>One Registered Company</h2>
       <p>From the construction site to your doorstep. Ask us about availability, prices and delivery.</p>
       <div class="rule"></div>
     </div>
@@ -224,16 +232,57 @@
       </div>
       <div class="svc">
         <div class="ph"><span class="num">02</span><img src="images/svc_transport.jpg" alt="Transport services" loading="lazy"></div>
-        <div class="body"><h3>Transport</h3><p>Transport services for goods and materials. Contact us to discuss your load and destination.</p><a class="lnk" href="#contact">Book transport &#8594;</a></div>
+        <div class="body"><h3>Transport</h3><p>Transport services for goods and materials, including tipper truck hire. Contact us to discuss your load and destination.</p><a class="lnk" href="#contact">Book transport &#8594;</a></div>
       </div>
       <div class="svc">
         <div class="ph"><span class="num">03</span><img src="images/svc_construction.jpg" alt="Construction services" loading="lazy"></div>
         <div class="body"><h3>Construction</h3><p>Construction services and materials support for residential and commercial projects.</p><a class="lnk" href="#contact">Discuss a project &#8594;</a></div>
       </div>
       <div class="svc">
-        <div class="ph"><span class="num">04</span><img src="images/svc_supplies.jpg" alt="General supplies" loading="lazy"></div>
+        <div class="ph"><span class="num">04</span><img src="images/svc_drilling.jpg" alt="Well drilling services" loading="lazy"></div>
+        <div class="body"><h3>Well Drilling</h3><p>Water well drilling and borehole services for homes, institutions and farms.</p><a class="lnk" href="#contact">Get a drilling quote &#8594;</a></div>
+      </div>
+      <div class="svc">
+        <div class="ph"><span class="num">05</span><img src="images/svc_supplies.jpg" alt="General supplies" loading="lazy"></div>
         <div class="body"><h3>General Suppliers</h3><p>General supply of goods to individuals, businesses and institutions.</p><a class="lnk" href="#contact">Place a supply order &#8594;</a></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="hw" id="hardware">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Hardware Shop</div>
+      <h2>What Our Hardware Shop Stocks</h2>
+      <p>Common hardware stock items sold in Fort Portal. Visit the shop on Rukidi III Street or call to check availability and prices.</p>
+      <div class="rule"></div>
+    </div>
+    <div class="hw-groups">
+      <div class="hwg"><h4>Building Materials</h4><div class="chips">
+        <span class="chip">Cement</span><span class="chip">Iron sheets</span><span class="chip">Roofing nails</span><span class="chip">Timber</span><span class="chip">Steel bars</span><span class="chip">Wire mesh</span><span class="chip">Hollow blocks</span><span class="chip">Sand</span><span class="chip">Aggregate</span><span class="chip">Lime</span><span class="chip">Round poles</span><span class="chip">Curing mats</span>
+      </div></div>
+      <div class="hwg"><h4>Plumbing &amp; Water</h4><div class="chips">
+        <span class="chip">PVC pipes</span><span class="chip">Pipe fittings</span><span class="chip">Taps &amp; mixers</span><span class="chip">Toilets</span><span class="chip">Sinks &amp; basins</span><span class="chip">Water tanks</span><span class="chip">Gutters</span><span class="chip">Water pumps</span><span class="chip">Hoses</span><span class="chip">Plumbing tape</span>
+      </div></div>
+      <div class="hwg"><h4>Electrical</h4><div class="chips">
+        <span class="chip">Cables &amp; wire</span><span class="chip">Bulbs</span><span class="chip">Switches</span><span class="chip">Sockets</span><span class="chip">Circuit breakers</span><span class="chip">Extension leads</span><span class="chip">Solar lights</span><span class="chip">Batteries</span><span class="chip">Tape</span>
+      </div></div>
+      <div class="hwg"><h4>Paint &amp; Finishing</h4><div class="chips">
+        <span class="chip">Oil paint</span><span class="chip">Emulsion paint</span><span class="chip">Undercoat</span><span class="chip">Thinner</span><span class="chip">Brushes</span><span class="chip">Rollers</span><span class="chip">Putty</span><span class="chip">Turpentine</span><span class="chip">Wall filler</span>
+      </div></div>
+      <div class="hwg"><h4>Doors, Windows &amp; Security</h4><div class="chips">
+        <span class="chip">Steel doors</span><span class="chip">Wooden doors</span><span class="chip">Door frames</span><span class="chip">Window glasses</span><span class="chip">Padlocks</span><span class="chip">Hinges</span><span class="chip">Bolts</span><span class="chip">Padlock keys</span><span class="chip">Safes</span>
+      </div></div>
+      <div class="hwg"><h4>Tools &amp; Equipment</h4><div class="chips">
+        <span class="chip">Hoes</span><span class="chip">Pangas</span><span class="chip">Spades</span><span class="chip">Pickaxes</span><span class="chip">Sledge hammers</span><span class="chip">Wheelbarrows</span><span class="chip">Trowels</span><span class="chip">Spirit levels</span><span class="chip">Tape measures</span><span class="chip">Hammers</span><span class="chip">Saws</span><span class="chip">Pliers</span><span class="chip">Spanners</span><span class="chip">Crowbars</span><span class="chip">Slashers</span><span class="chip">Ladders</span>
+      </div></div>
+      <div class="hwg"><h4>Fasteners &amp; Wire</h4><div class="chips">
+        <span class="chip">Nails (all sizes)</span><span class="chip">Screws</span><span class="chip">Bolts &amp; nuts</span><span class="chip">Washers</span><span class="chip">Barbed wire</span><span class="chip">Chain link</span><span class="chip">Binding wire</span><span class="chip">Razor wire</span><span class="chip">U-nails</span>
+      </div></div>
+      <div class="hwg"><h4>Farm &amp; Household</h4><div class="chips">
+        <span class="chip">Watering cans</span><span class="chip">Sprayers</span><span class="chip">Fencing posts</span><span class="chip">Ropes</span><span class="chip">Tarpaulins</span><span class="chip">Charcoal stoves</span><span class="chip">Jerrycans</span><span class="chip">Brooms</span><span class="chip">Soap dishes</span>
+      </div></div>
     </div>
   </div>
 </section>
@@ -242,19 +291,19 @@
   <div class="wrap">
     <div class="sec-head">
       <div class="kicker">Machinery &amp; Equipment</div>
-      <h2>Construction Machinery<br>on Ugandan Sites</h2>
-      <p>The machines that build roads, foundations and structures across Uganda. Ask us about supplying materials and equipment for your project.</p>
+      <h2>Construction Machinery<br>in Fort Portal</h2>
+      <p>The ordinary machines you see at work on sites around Fort Portal. Ask us about equipment for your project.</p>
       <div class="rule"></div>
     </div>
     <div class="mach-grid">
-      <div class="mach-card"><img src="images/mach_excavator.jpg" alt="Excavator" loading="lazy"><div class="lbl"><small>Earthmoving</small>Excavator</div></div>
-      <div class="mach-card"><img src="images/mach_loader.jpg" alt="Wheel loader" loading="lazy"><div class="lbl"><small>Earthmoving</small>Wheel Loader</div></div>
+      <div class="mach-card"><img src="images/mach_tipper.jpg" alt="Canter tipper truck" loading="lazy"><div class="lbl"><small>Haulage</small>Canter Tipper Truck</div></div>
       <div class="mach-card"><img src="images/mach_backhoe.jpg" alt="Backhoe loader" loading="lazy"><div class="lbl"><small>Earthmoving</small>Backhoe Loader</div></div>
-      <div class="mach-card"><img src="images/mach_grader.jpg" alt="Motor grader" loading="lazy"><div class="lbl"><small>Road Works</small>Motor Grader</div></div>
-      <div class="mach-card"><img src="images/mach_roller.jpg" alt="Road roller" loading="lazy"><div class="lbl"><small>Road Works</small>Road Roller</div></div>
-      <div class="mach-card"><img src="images/mach_tipper.jpg" alt="Tipper truck" loading="lazy"><div class="lbl"><small>Haulage</small>Tipper Truck</div></div>
-      <div class="mach-card"><img src="images/mach_mixer.jpg" alt="Concrete mixer truck" loading="lazy"><div class="lbl"><small>Concrete</small>Concrete Mixer</div></div>
-      <div class="mach-card"><img src="images/mach_crane.jpg" alt="Tower crane" loading="lazy"><div class="lbl"><small>Lifting</small>Tower Crane</div></div>
+      <div class="mach-card"><img src="images/mach_excavator.jpg" alt="Excavator" loading="lazy"><div class="lbl"><small>Earthmoving</small>Excavator</div></div>
+      <div class="mach-card"><img src="images/mach_roller.jpg" alt="Walk-behind road roller" loading="lazy"><div class="lbl"><small>Road Works</small>Walk-Behind Roller</div></div>
+      <div class="mach-card"><img src="images/mach_compactor.jpg" alt="Plate compactor" loading="lazy"><div class="lbl"><small>Compaction</small>Plate Compactor</div></div>
+      <div class="mach-card"><img src="images/mach_mixer.jpg" alt="Small concrete mixer" loading="lazy"><div class="lbl"><small>Concrete</small>Small Concrete Mixer</div></div>
+      <div class="mach-card"><img src="images/mach_drilling.jpg" alt="Borehole drilling rig" loading="lazy"><div class="lbl"><small>Well Drilling</small>Drilling Rig</div></div>
+      <div class="mach-card"><img src="images/mach_bowser.jpg" alt="Water bowser truck" loading="lazy"><div class="lbl"><small>Water</small>Water Bowser</div></div>
     </div>
     <p class="mach-note">Photos are illustrative of machinery commonly used in the construction industry.</p>
   </div>
@@ -332,7 +381,7 @@
           <div><label for="q-name">Your name</label><input id="q-name" required placeholder="Full name"></div>
           <div><label for="q-phone">Phone / WhatsApp</label><input id="q-phone" required placeholder="07xx xxx xxx"></div>
           <div><label for="q-type">What do you need?</label>
-            <select id="q-type"><option>Hardware</option><option>Transport</option><option>Construction</option><option>General Supplies</option><option>Other</option></select>
+            <select id="q-type"><option>Hardware</option><option>Transport</option><option>Construction</option><option>Well Drilling</option><option>General Supplies</option><option>Other</option></select>
           </div>
           <div><label for="q-msg">Details</label><textarea id="q-msg" rows="4" placeholder="Items, quantities, location..."></textarea></div>
           <button class="btn big" type="submit">Send on WhatsApp</button>
