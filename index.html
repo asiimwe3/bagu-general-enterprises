@@ -4,11 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bagu General Enterprises Ltd | Hardware, Transport, Construction & General Suppliers, Fort Portal</title>
+  <link rel="preload" as="image" href="images/hero1.webp?v=9" fetchpriority="high">
 <meta name="description" content="Bagu General Enterprises Ltd, Rukidi III Street, Fort Portal, Uganda. Dealers in hardware, transport, construction and general supplies. Call 0772 433687 or WhatsApp for quotations.">
 <meta property="og:title" content="Bagu General Enterprises Ltd, Fort Portal">
 <meta property="og:description" content="Hardware, transport, construction and general suppliers. Rukidi III Street, Fort Portal.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="images/logo_full.png">
+<meta property="og:image" content="images/logo_full.webp">
 <meta name="theme-color" content="#0b1f4b">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="favicon.png">
@@ -54,7 +55,8 @@
 
   .hero{position:relative;color:#fff;overflow:hidden;min-height:92vh;display:flex;align-items:center}
   .hero-slider{position:absolute;inset:0;z-index:0}
-  .hero-slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.4s ease-in-out}
+  .hero-slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0}
+  .hero-slider.ready .hero-slide{transition:opacity 1.4s ease-in-out}
   .hero-slide.active{opacity:1}
   .hero .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,17,27,.62),rgba(9,17,27,.45) 55%,rgba(9,17,27,.72));z-index:1}
   .hero .wrap{position:relative;z-index:2;padding:120px 22px 110px}
@@ -110,7 +112,7 @@
   .fact span:last-child{font-weight:700;text-align:right}
 
   .band{position:relative;color:#fff;text-align:center;overflow:hidden}
-  .band .bg{position:absolute;inset:0;background:url('images/cta_band.jpg?v=7?v=7') center/cover no-repeat}
+  .band .bg{position:absolute;inset:0;background:url('images/cta_band.webp?v=9') center/cover no-repeat}
   .band .ov{position:absolute;inset:0;background:rgba(9,17,27,.78)}
   .band .wrap{position:relative;z-index:2;padding:76px 22px}
   .band h2{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:900;margin-bottom:12px}
@@ -176,7 +178,7 @@
 
 <header>
   <div class="wrap">
-    <div class="logo"><img src="images/logo_mark.png" alt="Bagu General Enterprises logo"><div>BAGU GENERAL<small>Enterprises Ltd</small></div></div>
+    <div class="logo"><img src="images/logo_mark.webp" alt="Bagu General Enterprises logo"><div>BAGU GENERAL<small>Enterprises Ltd</small></div></div>
     <button class="burger" aria-label="Menu" onclick="document.querySelector('nav').classList.toggle('open')">&#9776;</button>
     <nav onclick="this.classList.remove('open')">
       <a href="#services">Services</a>
@@ -191,10 +193,10 @@
 
 <section class="hero" style="padding:0">
   <div class="hero-slider">
-    <div class="hero-slide active" style="background-image:url('images/hero1.jpg?v=8?v=7')"></div>
-    <div class="hero-slide" style="background-image:url('images/hero2.jpg?v=8?v=7')"></div>
-    <div class="hero-slide" style="background-image:url('images/hero3.jpg?v=8?v=7')"></div>
-    <div class="hero-slide" style="background-image:url('images/hero4.jpg?v=8?v=7')"></div>
+    <div class="hero-slide active" style="background-image:url('images/hero1.webp?v=9')"></div>
+    <div class="hero-slide" style="background-image:url('images/hero2.webp?v=9')"></div>
+    <div class="hero-slide" style="background-image:url('images/hero3.webp?v=9')"></div>
+    <div class="hero-slide" style="background-image:url('images/hero4.webp?v=9')"></div>
   </div>
   <div class="overlay"></div>
   <div class="wrap">
@@ -229,27 +231,27 @@
     </div>
     <div class="services-grid">
       <div class="svc">
-        <div class="ph"><span class="num">01</span><img src="images/svc_hardware.jpg?v=9" alt="Hardware supplies" loading="lazy"></div>
+        <div class="ph"><span class="num">01</span><img src="images/svc_hardware.webp?v=9" alt="Hardware supplies" loading="lazy"></div>
         <div class="body"><h3>Hardware</h3><p>Hardware supplies for building, repairs and everyday needs. Ask us about availability and prices.</p><a class="lnk" href="#contact">Get a price &#8594;</a></div>
       </div>
       <div class="svc">
-        <div class="ph"><span class="num">02</span><img src="images/svc_transport.jpg?v=7" alt="Transport services" loading="lazy"></div>
+        <div class="ph"><span class="num">02</span><img src="images/svc_transport.webp?v=7" alt="Transport services" loading="lazy"></div>
         <div class="body"><h3>Transport</h3><p>Transport services for goods and materials, including tipper truck hire. Contact us to discuss your load and destination.</p><a class="lnk" href="#contact">Book transport &#8594;</a></div>
       </div>
       <div class="svc">
-        <div class="ph"><span class="num">03</span><img src="images/svc_construction.jpg?v=7" alt="Construction services" loading="lazy"></div>
+        <div class="ph"><span class="num">03</span><img src="images/svc_construction.webp?v=7" alt="Construction services" loading="lazy"></div>
         <div class="body"><h3>Construction</h3><p>Construction services and materials support for residential and commercial projects.</p><a class="lnk" href="#contact">Discuss a project &#8594;</a></div>
       </div>
       <div class="svc">
-        <div class="ph"><span class="num">04</span><img src="images/svc_drilling.jpg?v=7" alt="Well drilling services" loading="lazy"></div>
+        <div class="ph"><span class="num">04</span><img src="images/svc_drilling.webp?v=7" alt="Well drilling services" loading="lazy"></div>
         <div class="body"><h3>Well Drilling</h3><p>Water well drilling and borehole services for homes, institutions and farms.</p><a class="lnk" href="#contact">Get a drilling quote &#8594;</a></div>
       </div>
       <div class="svc">
-        <div class="ph"><span class="num">05</span><img src="images/mach_backhoe.jpg?v=7" alt="Machine hire" loading="lazy"></div>
+        <div class="ph"><span class="num">05</span><img src="images/mach_backhoe.webp?v=7" alt="Machine hire" loading="lazy"></div>
         <div class="body"><h3>Machine Hire</h3><p>Hire tippers, excavators, mixers and rollers for your project, with an operator. Ask us for rates.</p><a class="lnk" href="#machinery">See the machines &#8594;</a></div>
       </div>
       <div class="svc">
-        <div class="ph"><span class="num">06</span><img src="images/svc_supplies.jpg?v=7" alt="General supplies" loading="lazy"></div>
+        <div class="ph"><span class="num">06</span><img src="images/svc_supplies.webp?v=7" alt="General supplies" loading="lazy"></div>
         <div class="body"><h3>General Suppliers</h3><p>General supply of goods to individuals, businesses and institutions.</p><a class="lnk" href="#contact">Place a supply order &#8594;</a></div>
       </div>
     </div>
@@ -264,30 +266,30 @@
       <p>Common hardware stock items sold in Fort Portal. Visit the shop on Rukidi III Street or call to check availability and prices.</p>
       <div class="rule"></div>
     </div>
-    <div class="hw-strip"><img src="images/hw_stock.jpg?v=9" alt="Stacked cement bags in supply yard" loading="lazy"></div>
+    <div class="hw-strip"><img src="images/hw_stock.webp?v=9" alt="Stacked cement bags in supply yard" loading="lazy"></div>
     <div class="hw-groups">
-      <div class="hwg"><h4>Building Materials</h4><div class="chips">
+      <div class="hwg"><h3>Building Materials</h3><div class="chips">
         <span class="chip">Cement</span><span class="chip">Iron sheets</span><span class="chip">Roofing nails</span><span class="chip">Timber</span><span class="chip">Steel bars</span><span class="chip">Wire mesh</span><span class="chip">Hollow blocks</span><span class="chip">Sand</span><span class="chip">Aggregate</span><span class="chip">Lime</span><span class="chip">Round poles</span><span class="chip">Curing mats</span>
       </div></div>
-      <div class="hwg"><h4>Plumbing &amp; Water</h4><div class="chips">
+      <div class="hwg"><h3>Plumbing &amp; Water</h3><div class="chips">
         <span class="chip">PVC pipes</span><span class="chip">Pipe fittings</span><span class="chip">Taps &amp; mixers</span><span class="chip">Toilets</span><span class="chip">Sinks &amp; basins</span><span class="chip">Water tanks</span><span class="chip">Gutters</span><span class="chip">Water pumps</span><span class="chip">Hoses</span><span class="chip">Plumbing tape</span>
       </div></div>
-      <div class="hwg"><h4>Electrical</h4><div class="chips">
+      <div class="hwg"><h3>Electrical</h3><div class="chips">
         <span class="chip">Cables &amp; wire</span><span class="chip">Bulbs</span><span class="chip">Switches</span><span class="chip">Sockets</span><span class="chip">Circuit breakers</span><span class="chip">Extension leads</span><span class="chip">Solar lights</span><span class="chip">Batteries</span><span class="chip">Tape</span>
       </div></div>
-      <div class="hwg"><h4>Paint &amp; Finishing</h4><div class="chips">
+      <div class="hwg"><h3>Paint &amp; Finishing</h3><div class="chips">
         <span class="chip">Oil paint</span><span class="chip">Emulsion paint</span><span class="chip">Undercoat</span><span class="chip">Thinner</span><span class="chip">Brushes</span><span class="chip">Rollers</span><span class="chip">Putty</span><span class="chip">Turpentine</span><span class="chip">Wall filler</span>
       </div></div>
-      <div class="hwg"><h4>Doors, Windows &amp; Security</h4><div class="chips">
+      <div class="hwg"><h3>Doors, Windows &amp; Security</h3><div class="chips">
         <span class="chip">Steel doors</span><span class="chip">Wooden doors</span><span class="chip">Door frames</span><span class="chip">Window glasses</span><span class="chip">Padlocks</span><span class="chip">Hinges</span><span class="chip">Bolts</span><span class="chip">Padlock keys</span><span class="chip">Safes</span>
       </div></div>
-      <div class="hwg"><h4>Tools &amp; Equipment</h4><div class="chips">
+      <div class="hwg"><h3>Tools &amp; Equipment</h3><div class="chips">
         <span class="chip">Hoes</span><span class="chip">Pangas</span><span class="chip">Spades</span><span class="chip">Pickaxes</span><span class="chip">Sledge hammers</span><span class="chip">Wheelbarrows</span><span class="chip">Trowels</span><span class="chip">Spirit levels</span><span class="chip">Tape measures</span><span class="chip">Hammers</span><span class="chip">Saws</span><span class="chip">Pliers</span><span class="chip">Spanners</span><span class="chip">Crowbars</span><span class="chip">Slashers</span><span class="chip">Ladders</span>
       </div></div>
-      <div class="hwg"><h4>Fasteners &amp; Wire</h4><div class="chips">
+      <div class="hwg"><h3>Fasteners &amp; Wire</h3><div class="chips">
         <span class="chip">Nails (all sizes)</span><span class="chip">Screws</span><span class="chip">Bolts &amp; nuts</span><span class="chip">Washers</span><span class="chip">Barbed wire</span><span class="chip">Chain link</span><span class="chip">Binding wire</span><span class="chip">Razor wire</span><span class="chip">U-nails</span>
       </div></div>
-      <div class="hwg"><h4>Farm &amp; Household</h4><div class="chips">
+      <div class="hwg"><h3>Farm &amp; Household</h3><div class="chips">
         <span class="chip">Watering cans</span><span class="chip">Sprayers</span><span class="chip">Fencing posts</span><span class="chip">Ropes</span><span class="chip">Tarpaulins</span><span class="chip">Charcoal stoves</span><span class="chip">Jerrycans</span><span class="chip">Brooms</span><span class="chip">Soap dishes</span>
       </div></div>
     </div>
@@ -303,15 +305,15 @@
       <div class="rule"></div>
     </div>
     <div class="mach-grid">
-      <div class="mach-card"><img src="images/mach_tipper.jpg" alt="Canter tipper truck" loading="lazy"><div class="lbl"><small>Haulage</small>Canter Tipper Truck</div></div>
-      <div class="mach-card"><img src="images/mach_backhoe.jpg" alt="Backhoe loader" loading="lazy"><div class="lbl"><small>Earthmoving</small>Backhoe Loader</div></div>
-      <div class="mach-card"><img src="images/mach_excavator.jpg" alt="Excavator" loading="lazy"><div class="lbl"><small>Earthmoving</small>Excavator</div></div>
-      <div class="mach-card"><img src="images/mach_roller.jpg" alt="Walk-behind road roller" loading="lazy"><div class="lbl"><small>Road Works</small>Walk-Behind Roller</div></div>
-      <div class="mach-card"><img src="images/mach_compactor.jpg" alt="Plate compactor" loading="lazy"><div class="lbl"><small>Compaction</small>Plate Compactor</div></div>
-      <div class="mach-card"><img src="images/mach_mixer.jpg" alt="Small concrete mixer" loading="lazy"><div class="lbl"><small>Concrete</small>Small Concrete Mixer</div></div>
-      <div class="mach-card"><img src="images/mach_mixer_electric.jpg" alt="Electric portable concrete mixer on wheels" loading="lazy" style="background:#fff;object-fit:contain"><div class="lbl"><small>Concrete</small>Electric Portable Mixer</div></div>
-      <div class="mach-card"><img src="images/mach_drilling.jpg" alt="Borehole drilling rig" loading="lazy"><div class="lbl"><small>Well Drilling</small>Drilling Rig</div></div>
-      <div class="mach-card"><img src="images/mach_bowser.jpg" alt="Water bowser truck" loading="lazy"><div class="lbl"><small>Water</small>Water Bowser</div></div>
+      <div class="mach-card"><img src="images/mach_tipper.webp" alt="Canter tipper truck" loading="lazy"><div class="lbl"><small>Haulage</small>Canter Tipper Truck</div></div>
+      <div class="mach-card"><img src="images/mach_backhoe.webp" alt="Backhoe loader" loading="lazy"><div class="lbl"><small>Earthmoving</small>Backhoe Loader</div></div>
+      <div class="mach-card"><img src="images/mach_excavator.webp" alt="Excavator" loading="lazy"><div class="lbl"><small>Earthmoving</small>Excavator</div></div>
+      <div class="mach-card"><img src="images/mach_roller.webp" alt="Walk-behind road roller" loading="lazy"><div class="lbl"><small>Road Works</small>Walk-Behind Roller</div></div>
+      <div class="mach-card"><img src="images/mach_compactor.webp" alt="Plate compactor" loading="lazy"><div class="lbl"><small>Compaction</small>Plate Compactor</div></div>
+      <div class="mach-card"><img src="images/mach_mixer.webp" alt="Small concrete mixer" loading="lazy"><div class="lbl"><small>Concrete</small>Small Concrete Mixer</div></div>
+      <div class="mach-card"><img src="images/mach_mixer_electric.webp" alt="Electric portable concrete mixer on wheels" loading="lazy" style="background:#fff;object-fit:contain"><div class="lbl"><small>Concrete</small>Electric Portable Mixer</div></div>
+      <div class="mach-card"><img src="images/mach_drilling.webp" alt="Borehole drilling rig" loading="lazy"><div class="lbl"><small>Well Drilling</small>Drilling Rig</div></div>
+      <div class="mach-card"><img src="images/mach_bowser.webp" alt="Water bowser truck" loading="lazy"><div class="lbl"><small>Water</small>Water Bowser</div></div>
     </div>
     <p class="mach-note">Photos are illustrative of machinery commonly used in the construction industry.</p>
   </div>
@@ -320,7 +322,7 @@
 <section class="about" id="about">
   <div class="wrap">
     <div class="img">
-      <img src="images/about.jpg?v=7" alt="Steel framework under construction" loading="lazy">
+      <img src="images/about.webp?v=7" alt="Steel framework under construction" loading="lazy">
       <div class="badge">Est. Fort Portal</div>
     </div>
     <div>
@@ -340,7 +342,7 @@
       <a class="btn dark big" href="#contact">Get in Touch</a>
     </div>
     <div class="facts">
-      <h4>Company Details</h4>
+      <h3>Company Details</h3>
       <div class="fact"><span>Company</span><span>Bagu General Enterprises Ltd</span></div>
       <div class="fact"><span>Business</span><span>Hardware, Transport, Construction &amp; General Suppliers</span></div>
       <div class="fact"><span>Head office</span><span>Rukidi III Street, Fort Portal</span></div>
@@ -401,11 +403,11 @@
 
 <footer>
   <div class="wrap">
-    <img src="images/logo_full.png" alt="Bagu General Enterprises" style="height:120px;width:auto;margin:0 auto 14px;background:#fff;padding:10px 16px;border-radius:10px"><div class="brand">BAGU GENERAL ENTERPRISES LTD</div>
+    <img src="images/logo_full.webp" alt="Bagu General Enterprises" style="height:120px;width:auto;margin:0 auto 14px;background:#fff;padding:10px 16px;border-radius:10px"><div class="brand">BAGU GENERAL ENTERPRISES LTD</div>
     <div class="tag">Hardware &middot; Transport &middot; Construction &middot; General Suppliers</div>
     <p>Rukidi III Street, P.O. Box 253, Fort Portal, Uganda &middot; TIN 1033548632</p>
     <p style="margin-top:8px"><a href="mailto:baguent@yahoo.com">baguent@yahoo.com</a> &middot; <a href="tel:+256772433687">0772 433687</a></p>
-    <p style="margin-top:16px;font-size:.78rem;color:#6d7f93">Website by <a href="https://derycode.publicvm.com" target="_blank" rel="noopener">Derycode</a></p>
+    <p style="margin-top:16px;font-size:.78rem;color:#6d7f93">Website by <a href="https://derycode.publicvm.com" target="_blank" rel="noopener" style="text-decoration:underline">Derycode</a></p>
   </div>
 </footer>
 
@@ -416,6 +418,7 @@
   var slides=document.querySelectorAll('.hero-slide'),dots=document.querySelectorAll('.hdot'),i=0,t;
   function show(n){slides.forEach(function(s,k){s.classList.toggle('active',k===n)});dots.forEach(function(d,k){d.classList.toggle('active',k===n)});i=n}
   function start(){t=setInterval(function(){show((i+1)%slides.length)},5000)}
+  requestAnimationFrame(function(){setTimeout(function(){var hs=document.querySelector('.hero-slider');if(hs)hs.classList.add('ready')},0)});
   start();
   dots.forEach(function(d){d.addEventListener('click',function(){clearInterval(t);show(+d.dataset.i);start()})});
 })();
@@ -443,10 +446,10 @@ if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js')}
 #derycode-network .dcsite b{display:block;color:#fff;font-size:15px;margin-bottom:4px;text-decoration:none}
 #derycode-network .dcsite span{color:#93a3bd;font-size:13px;line-height:1.4;text-decoration:none}
 #derycode-network .dcfoot{margin-top:22px;padding-top:14px;border-top:1px solid #22314e;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center}
-#derycode-network .dcbrand{color:#66788f;font-size:13px}
-#derycode-network .dcbrand a{color:#0a84ff;font-weight:600;text-decoration:none}
-#derycode-network .dcwa{background:#0a84ff;color:#fff;border-radius:999px;padding:10px 18px;font-size:14px;font-weight:700;text-decoration:none}
-#derycode-network .dcwa:hover{background:#0090ff}
+#derycode-network .dcbrand{color:#a7b4c4;font-size:13px}
+#derycode-network .dcbrand a{color:#7cc0ff;font-weight:600;text-decoration:none}
+#derycode-network .dcwa{background:#0063cc;color:#fff;border-radius:999px;padding:10px 18px;font-size:14px;font-weight:700;text-decoration:none}
+#derycode-network .dcwa:hover{background:#0057b8}
 @media(max-width:520px){#derycode-network .dcfoot{flex-direction:column;align-items:flex-start}}
 </style>
 <div class="dcw">
@@ -480,7 +483,7 @@ if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js')}
   try{
     var hide=localStorage.getItem('dcx_hide_until');
     var force=location.search.indexOf('showad')>-1; var hu=hide?parseInt(hide):0; if(!force && hu && Date.now()<hu && hu-Date.now()<90000000) return;
-    var SITES=[{"n": "Tropical Gardens Hotel", "t": "Rooms, restaurant & wedding gardens, Kyenjojo", "u": "https://tropicalgardenshotelkyenjojo.com", "i": "https://tropicalgardenshotelkyenjojo.com/assets/hero/slide3_gate.jpg"}, {"n": "Steady Company (U) Ltd", "t": "Phones & electronics dealer, Fort Portal", "u": "https://steadycompanyltd.com", "i": "https://media.base44.com/images/public/69f8f20192eecc9587b7eca6/56a6adb90_generated_image.png"}, {"n": "Bagu Legacy Homes", "t": "Comfortable homestays, Fort Portal", "u": "https://bagulegacyhomes.online", "i": "https://bagulegacyhomes.online/images/g01.jpg"}, {"n": "DeryCode Technologies", "t": "Software, AI & blockchain company, Uganda", "u": "https://derycode.online", "i": "https://derycode.online/favicon.png"}, {"n": "Peters Medicare Services", "t": "Quality, affordable clinic in Kyenjojo", "u": "https://petersmedicare.online", "i": "https://petersmedicare.online/assets/gal-compound-aerial-BKe9V-oH.webp"}, {"n": "DeryCode Spin & Win", "t": "Pay UGX 2,000, spin & win up to UGX 1M instantly", "u": "https://derycode-spin-win.vercel.app", "i": "https://derycode-spin-win.vercel.app/assets/logo.png"}];
+    var SITES=[{"n": "Tropical Gardens Hotel", "t": "Rooms, restaurant & wedding gardens, Kyenjojo", "u": "https://tropicalgardenshotelkyenjojo.com", "i": "https://tropicalgardenshotelkyenjojo.com/assets/hero/slide3_gate.jpg"}, {"n": "Steady Company (U) Ltd", "t": "Phones & electronics dealer, Fort Portal", "u": "https://steadycompanyltd.com", "i": "https://media.base44.com/images/public/69f8f20192eecc9587b7eca6/56a6adb90_generated_image.webp"}, {"n": "Bagu Legacy Homes", "t": "Comfortable homestays, Fort Portal", "u": "https://bagulegacyhomes.online", "i": "https://bagulegacyhomes.online/images/g01.webp"}, {"n": "DeryCode Technologies", "t": "Software, AI & blockchain company, Uganda", "u": "https://derycode.online", "i": "https://derycode.online/favicon.png"}, {"n": "Peters Medicare Services", "t": "Quality, affordable clinic in Kyenjojo", "u": "https://petersmedicare.online", "i": "https://petersmedicare.online/assets/gal-compound-aerial-BKe9V-oH.webp"}, {"n": "DeryCode Spin & Win", "t": "Pay UGX 2,000, spin & win up to UGX 1M instantly", "u": "https://derycode-spin-win.vercel.app", "i": "https://derycode-spin-win.vercel.app/assets/logo.png"}];
     SITES=SITES.filter(function(s){return s.u.indexOf(location.hostname)===-1;});
     if(!SITES.length) return;
     var s=SITES[Math.floor(Math.random()*SITES.length)];
