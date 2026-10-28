@@ -84,6 +84,8 @@
   .svc{background:var(--card);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column}
   .svc:hover{transform:translateY(-5px)}
   .svc .ph{position:relative;height:180px;overflow:hidden}
+.svc .ph-plain{background:linear-gradient(135deg,#B31B1B 0%,#8E1515 55%,#5C0F0F 100%);display:flex;align-items:center;justify-content:center}
+.svc .ph-plain .ph-word{color:#fff;font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:1.15rem;opacity:.95}
   .svc .ph img{width:100%;height:100%;object-fit:cover;transition:.4s}
   .svc:hover .ph img{transform:scale(1.07)}
   .svc .ph::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,27,42,.15),rgba(13,27,42,.55))}
@@ -231,7 +233,7 @@
     </div>
     <div class="services-grid">
       <div class="svc">
-        <div class="ph"><span class="num">01</span><img src="images/svc_hardware.webp?v=9" alt="Hardware supplies" loading="lazy"></div>
+        <div class="ph ph-plain"><span class="num">01</span><span class="ph-word">Hardware</span></div>
         <div class="body"><h3>Hardware</h3><p>Hardware supplies for building, repairs and everyday needs. Ask us about availability and prices.</p><a class="lnk" href="#contact">Get a price &#8594;</a></div>
       </div>
       <div class="svc">
