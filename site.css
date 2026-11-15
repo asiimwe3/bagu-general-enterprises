@@ -121,3 +121,40 @@ footer .copy,footer .credit{color:#6b6b6b!important}
 
 .btn.ghost{background:#fff!important;color:#0b1f4b!important;border:1px solid #0b1f4b!important}
 .btn.ghost:hover{background:#f0f0f0!important;color:#0b1f4b!important}
+
+/* ===== v21 (shared): heavier type across the whole site =====
+   Standing rule: all UI text bold, large and readable on phones.
+   Body copy moves to 500, headings to 800, labels and buttons to 700-800. */
+html,body{font-weight:500}
+body{font-weight:500;letter-spacing:-.005em}
+p,li,dd,dt,td,th,figcaption,blockquote,summary{font-weight:500}
+.lead,.sub,.tagline{font-weight:600}
+strong,b{font-weight:800}
+h1,h2,h3,h4,h5,h6{font-weight:800;letter-spacing:-.02em}
+h1{font-weight:800}
+.hero h1{font-weight:800;letter-spacing:-.025em}
+.hero p{font-weight:500}
+.kicker,.eyebrow{font-weight:800;letter-spacing:.12em}
+.btn,.btn.big,.btn.ghost{font-weight:700}
+nav a{font-weight:700}
+.mach-card .lbl{font-weight:700}
+.mach-card .lbl small{font-weight:800}
+.svc .num{font-weight:800}
+.fact span:first-child{font-weight:600}
+.fact span:last-child{font-weight:700}
+footer{font-weight:500}
+footer .brand{font-weight:800}
+footer a{font-weight:600}
+input,textarea,select,button{font-weight:500}
+label{font-weight:700}
+.small,small{font-weight:600}
+@media(max-width:840px){
+  body,p,li{font-weight:500}
+  h1{font-weight:800}
+}
+
+/* header-qualified rules were overriding the general ones: beat them at equal specificity */
+header nav a{font-weight:700}
+header .logo small{font-weight:700;font-size:.62rem;letter-spacing:.06em}
+header .logo div{font-weight:800}
+@media(max-width:840px){nav a{font-weight:700}}
