@@ -488,6 +488,25 @@ img[src=""]{display:none}
 /* closing band behind a real load of granite */
 .band .bg{background-size:cover;background-position:center;background-repeat:no-repeat}
 .band .ov{background:linear-gradient(90deg,rgba(8,18,40,.93) 0%,rgba(8,18,40,.78) 55%,rgba(8,18,40,.55) 100%)}
+
+/* ===== v18: light masthead so the dark logo and nav read clearly ===== */
+header{
+  background:linear-gradient(180deg,#ffffff 0%,#f7f4ef 100%);
+  border-bottom:2px solid var(--red);
+  box-shadow:0 1px 0 rgba(11,31,75,.05),0 8px 28px rgba(11,31,75,.10);
+  color:var(--navy);
+}
+header .logo{color:var(--navy);font-weight:900}
+header .logo small{color:#5b6a80;font-weight:700;letter-spacing:.02em}
+header nav a{color:var(--navy);font-weight:700}
+header nav a:hover{color:var(--red)}
+nav a:not(.btn)::after{background:var(--red)}
+header .burger{color:var(--navy)}
+header .btn{box-shadow:0 8px 20px rgba(179,15,26,.24)}
+@media(max-width:840px){
+  nav{background:#fff;border-top:1px solid rgba(11,31,75,.10);box-shadow:0 18px 34px rgba(11,31,75,.16)}
+  nav a{color:var(--navy)}
+}
 </style>
 </head>
 <body>
