@@ -5,8 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bagu General Enterprises Ltd | Hardware, Transport, Construction & General Suppliers, Fort Portal</title>
-  <link rel="preload" as="image" href="images/hero1.webp?v=10" fetchpriority="high">
-<meta name="description" content="Bagu General Enterprises Ltd, Rukidi III Street, Fort Portal, Uganda. Dealers in hardware, transport, construction and general supplies. Call 0772 433687 or WhatsApp for quotations.">
+  <meta name="description" content="Bagu General Enterprises Ltd, Rukidi III Street, Fort Portal, Uganda. Dealers in hardware, transport, construction and general supplies. Call 0772 433687 or WhatsApp for quotations.">
 <meta property="og:title" content="Bagu General Enterprises Ltd, Fort Portal">
 <meta property="og:description" content="Hardware, transport, construction and general suppliers. Rukidi III Street, Fort Portal.">
 <meta property="og:type" content="website">
@@ -118,7 +117,7 @@
   .fact span:last-child{font-weight:700;text-align:right}
 
   .band{position:relative;color:#fff;text-align:center;overflow:hidden}
-  .band .bg{position:absolute;inset:0;background:url('images/cta_band.webp?v=17') center/cover no-repeat}
+  .band .bg{position:absolute;inset:0;background:#0b1f4b}
   .band .ov{position:absolute;inset:0;background:rgba(9,17,27,.78)}
   .band .wrap{position:relative;z-index:2;padding:76px 22px}
   .band h2{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:900;margin-bottom:12px}
@@ -350,6 +349,105 @@ section{padding-block:clamp(64px,8vw,112px)}
   .hero p{font-size:1.02rem}
 }
 
+
+/* ===== v15: photo-free design system =====
+   All stock photography removed. These blocks carry the design instead. */
+.hero{
+  background:
+    radial-gradient(900px 520px at 12% 18%, rgba(179,15,26,.30), transparent 62%),
+    radial-gradient(1100px 640px at 88% 82%, rgba(59,130,246,.22), transparent 60%),
+    linear-gradient(150deg,#0b1f4b 0%,#0a1733 52%,#070f22 100%);
+  min-height:88vh; padding:0; position:relative; isolation:isolate;
+}
+.hero::before{
+  content:''; position:absolute; inset:0; z-index:0; opacity:.30; pointer-events:none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(120% 90% at 50% 0%,#000 30%,transparent 78%);
+  -webkit-mask-image:radial-gradient(120% 90% at 50% 0%,#000 30%,transparent 78%);
+}
+.hero .overlay{display:none}
+.hero .wrap{position:relative;z-index:2}
+.hero .kicker{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);color:#eaf0ff}
+.hero .kicker::before{background:#ff5a63;box-shadow:0 0 12px #ff5a63}
+.hero h1{color:#fff;font-size:clamp(2.5rem,6vw,4.3rem);letter-spacing:-.04em;line-height:1.03}
+.hero p{color:rgba(233,240,252,.88);max-width:58ch;font-size:1.12rem}
+
+/* service cards: numbered gradient panels instead of photos */
+.svc .ph{
+  height:172px;display:flex;align-items:flex-end;padding:16px;position:relative;overflow:hidden;
+  background:linear-gradient(140deg,#12305f 0%,#0b1f4b 55%,#081632 100%);
+  border-bottom:1px solid rgba(255,255,255,.07);
+}
+.svc .ph::after{
+  content:'';position:absolute;inset:0;opacity:.35;
+  background-image:
+    linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);
+  background-size:34px 34px;
+  mask-image:linear-gradient(160deg,#000,transparent 72%);
+  -webkit-mask-image:linear-gradient(160deg,#000,transparent 72%);
+}
+.svc .ph .num{
+  position:relative;z-index:2;font-size:2.4rem;font-weight:800;line-height:1;
+  color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.55);letter-spacing:-.03em;
+}
+.svc:hover .ph .num{-webkit-text-stroke-color:#ff8f96}
+
+/* machinery: navy specification tiles instead of stock photos */
+.mach-card{
+  aspect-ratio:auto;min-height:132px;border-radius:16px;
+  background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.015));
+  border:1px solid rgba(255,255,255,.12);
+  display:flex;flex-direction:column;justify-content:flex-end;padding:18px;
+  box-shadow:none;transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .35s,background .35s;
+}
+.mach-card::after{content:'';position:absolute;inset:0;background:none}
+.mach-card::before{
+  content:'';position:absolute;top:16px;left:18px;width:26px;height:3px;border-radius:2px;
+  background:linear-gradient(90deg,#b30f1a,#ff5a63);
+}
+.mach-card:hover{transform:translateY(-5px);border-color:rgba(255,255,255,.26);
+  background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.03))}
+.mach-card .lbl{position:static;font-size:1.06rem;font-weight:800;letter-spacing:-.01em;color:#fff}
+.mach-card .lbl small{color:#ff8f96;letter-spacing:.16em;margin-bottom:6px}
+
+/* about: graph-paper panel replaces the site photo */
+.about .img{
+  background:
+    radial-gradient(600px 380px at 80% 10%,rgba(179,15,26,.22),transparent 60%),
+    linear-gradient(150deg,#0b1f4b,#0a1733);
+  border-radius:18px;border:1px solid rgba(11,31,75,.12);min-height:320px;
+  display:flex;align-items:flex-end;justify-content:flex-start;padding:22px;position:relative;overflow:hidden;
+}
+.about .img::before{
+  content:'';position:absolute;inset:0;opacity:.35;
+  background-image:
+    linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);
+  background-size:40px 40px;
+  mask-image:radial-gradient(110% 90% at 20% 0%,#000,transparent 75%);
+  -webkit-mask-image:radial-gradient(110% 90% at 20% 0%,#000,transparent 75%);
+}
+.about .img .badge{position:relative;z-index:2;background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.24);color:#fff;backdrop-filter:blur(6px)}
+
+/* closing band: gradient, no photograph */
+.band .bg{background:
+  radial-gradient(900px 500px at 15% 20%,rgba(179,15,26,.55),transparent 62%),
+  radial-gradient(900px 520px at 85% 80%,rgba(59,130,246,.30),transparent 62%),
+  linear-gradient(150deg,#0b1f4b,#070f22)!important;
+  background-image:none!important}
+.band .bg::after{content:'';position:absolute;inset:0;opacity:.28;
+  background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);
+  background-size:56px 56px}
+
+/* avoid any empty-src image box in the cross-promo strip */
+img[src=""]{display:none}
+
 </style>
 </head>
 <body>
@@ -370,12 +468,6 @@ section{padding-block:clamp(64px,8vw,112px)}
 </header>
 
 <section class="hero" style="padding:0">
-  <div class="hero-slider">
-    <div class="hero-slide active" style="background-image:url('images/hero1.webp?v=10')"></div>
-    <div class="hero-slide" style="background-image:url('images/hero2.webp?v=17')"></div>
-    <div class="hero-slide" style="background-image:url('images/hero3.webp?v=17')"></div>
-    <div class="hero-slide" style="background-image:url('images/hero4.webp?v=10')"></div>
-  </div>
   <div class="overlay"></div>
   <div class="wrap">
     <div class="kicker">Fort Portal &middot; Uganda</div>
@@ -409,27 +501,27 @@ section{padding-block:clamp(64px,8vw,112px)}
     </div>
     <div class="services-grid">
       <div class="svc">
-        <div class="ph"><span class="num">01</span><img src="images/svc_hardware.webp?v=15" alt="Bagu hardware shop setup: shelving, Hima Cement and building materials" loading="lazy"></div>
+        <div class="ph"><span class="num">01</span></div>
         <div class="body"><h3>Hardware</h3><p>Hardware supplies for building, repairs and everyday needs. Ask us about availability and prices.</p><a class="lnk" href="#contact">Get a price &#8594;</a></div>
       </div>
       <div class="svc">
-        <div class="ph"><span class="num">02</span><img src="images/svc_transport.webp?v=10" alt="Transport services" loading="lazy"></div>
+        <div class="ph"><span class="num">02</span></div>
         <div class="body"><h3>Transport</h3><p>Truck hire for goods and materials &#8212; Howo 371 tipper and a Mitsubishi Fuso crane truck for loading, haulage and site deliveries. Contact us to discuss your load and destination.</p><a class="lnk" href="#contact">Book transport &#8594;</a></div>
       </div>
       <div class="svc">
-        <div class="ph"><span class="num">03</span><img src="images/svc_construction.webp?v=17" alt="Construction services" loading="lazy"></div>
+        <div class="ph"><span class="num">03</span></div>
         <div class="body"><h3>Construction</h3><p>Construction services and materials support for residential and commercial projects.</p><a class="lnk" href="#contact">Discuss a project &#8594;</a></div>
       </div>
       <div class="svc">
-        <div class="ph"><span class="num">04</span><img src="images/svc_drilling.webp?v=17" alt="Water well drilling rig set up on site" loading="lazy"></div>
+        <div class="ph"><span class="num">04</span></div>
         <div class="body"><h3>Well Drilling</h3><p>Water well drilling and borehole services for homes, institutions and farms.</p><a class="lnk" href="#contact">Get a drilling quote &#8594;</a></div>
       </div>
       <div class="svc">
-        <div class="ph"><span class="num">05</span><img src="images/mach_backhoe.webp?v=10" alt="Machine hire" loading="lazy"></div>
+        <div class="ph"><span class="num">05</span></div>
         <div class="body"><h3>Machine Hire</h3><p>Hire tippers, excavators, mixers and rollers for your project, with an operator. Ask us for rates.</p><a class="lnk" href="#machinery">See the machines &#8594;</a></div>
       </div>
       <div class="svc">
-        <div class="ph"><span class="num">06</span><img src="images/svc_supplies.webp?v=7" alt="General supplies" loading="lazy"></div>
+        <div class="ph"><span class="num">06</span></div>
         <div class="body"><h3>General Suppliers</h3><p>General supply of goods to individuals, businesses and institutions.</p><a class="lnk" href="#contact">Place a supply order &#8594;</a></div>
       </div>
     </div>
@@ -444,7 +536,6 @@ section{padding-block:clamp(64px,8vw,112px)}
       <p>Common hardware stock items sold in Fort Portal. Visit the shop on Rukidi III Street or call to check availability and prices.</p>
       <div class="rule"></div>
     </div>
-    <div class="hw-strip"><img src="images/hw_stock.webp?v=13" alt="Huge stack of Hima Cement bags in the Bagu General Enterprises store" loading="lazy"></div>
     <div class="hw-groups">
       <div class="hwg"><h3>Building Materials</h3><div class="chips">
         <span class="chip">Hima Cement</span><span class="chip">Iron sheets</span><span class="chip">Roofing nails</span><span class="chip">Timber</span><span class="chip">Steel bars</span><span class="chip">Wire mesh</span><span class="chip">Hollow blocks</span><span class="chip">Sand</span><span class="chip">Aggregate</span><span class="chip">Lime</span><span class="chip">Round poles</span><span class="chip">Curing mats</span>
@@ -483,15 +574,15 @@ section{padding-block:clamp(64px,8vw,112px)}
       <div class="rule"></div>
     </div>
     <div class="mach-grid">
-      <div class="mach-card"><img src="images/mach_tipper.webp?v=10" alt="Howo 371 tipper truck" loading="lazy"><div class="lbl"><small>Haulage</small>Howo 371 Tipper</div></div>
-      <div class="mach-card"><img src="images/mach_backhoe.webp?v=10" alt="JCB backhoe loader" loading="lazy"><div class="lbl"><small>Earthmoving</small>JCB Backhoe Loader</div></div>
-      <div class="mach-card"><img src="images/mach_excavator.webp?v=17" alt="Caterpillar excavator" loading="lazy"><div class="lbl"><small>Earthmoving</small>Caterpillar Excavator</div></div>
-      <div class="mach-card"><img src="images/mach_roller.webp?v=17" alt="Vibratory roller for road works" loading="lazy"><div class="lbl"><small>Road Works</small>Vibratory Roller</div></div>
-      <div class="mach-card"><img src="images/mach_compactor.webp?v=17" alt="Plate compactor" loading="lazy"><div class="lbl"><small>Compaction</small>Plate Compactor</div></div>
-      <div class="mach-card"><img src="images/mach_mixer.webp?v=10" alt="Small concrete mixer" loading="lazy"><div class="lbl"><small>Concrete</small>Small Concrete Mixer</div></div>
-      <div class="mach-card"><img src="images/mach_mixer_electric.webp" alt="Electric portable concrete mixer on wheels" loading="lazy" style="background:#fff;object-fit:contain"><div class="lbl"><small>Concrete</small>Electric Portable Mixer</div></div>
-      <div class="mach-card"><img src="images/mach_drilling.webp?v=17" alt="Water well drilling rig on site" loading="lazy"><div class="lbl"><small>Well Drilling</small>Drilling Rig</div></div>
-      <div class="mach-card"><img src="images/mach_bowser.webp" alt="Water bowser truck" loading="lazy"><div class="lbl"><small>Water</small>Water Bowser</div></div>
+      <div class="mach-card"><div class="lbl"><small>Haulage</small>Howo 371 Tipper</div></div>
+      <div class="mach-card"><div class="lbl"><small>Earthmoving</small>JCB Backhoe Loader</div></div>
+      <div class="mach-card"><div class="lbl"><small>Earthmoving</small>Caterpillar Excavator</div></div>
+      <div class="mach-card"><div class="lbl"><small>Road Works</small>Vibratory Roller</div></div>
+      <div class="mach-card"><div class="lbl"><small>Compaction</small>Plate Compactor</div></div>
+      <div class="mach-card"><div class="lbl"><small>Concrete</small>Small Concrete Mixer</div></div>
+      <div class="mach-card"><div class="lbl"><small>Concrete</small>Electric Portable Mixer</div></div>
+      <div class="mach-card"><div class="lbl"><small>Well Drilling</small>Drilling Rig</div></div>
+      <div class="mach-card"><div class="lbl"><small>Water</small>Water Bowser</div></div>
     </div>
     <p class="mach-note">Machine photos are representative of the units we hire out. Call us for current photos of the exact machine you need.</p>
   </div>
@@ -500,7 +591,7 @@ section{padding-block:clamp(64px,8vw,112px)}
 <section class="about" id="about">
   <div class="wrap">
     <div class="img">
-      <img src="images/about.webp?v=17" alt="Framing work on a construction site" loading="lazy">
+      
       <div class="badge">Est. Fort Portal</div>
     </div>
     <div>
