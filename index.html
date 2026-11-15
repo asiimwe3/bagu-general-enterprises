@@ -594,6 +594,57 @@ footer img{background:#fff!important;border:1px solid var(--line);border-radius:
   section{padding:52px 0}
   .hero .hero-slider{height:clamp(190px,52vw,300px);margin-top:24px}
 }
+/* ===== v20: contrast repair =====
+   The clean pass turned these surfaces white while their text stayed white.
+   Every pair here is set explicitly, so nothing depends on inheritance. */
+
+/* machinery section: light, like the rest of the page */
+.mach{background:#fff!important;color:#1a1a1a}
+.mach .sec-head h2{color:#0b1f4b!important}
+.mach .sec-head p{color:#5c5c5c!important}
+.mach .sec-head .kicker{color:#5c5c5c!important}
+
+/* machine cards: label becomes a white strip with dark type */
+.mach-card{background:#fff;border:1px solid #e3e3e3}
+.mach-card .lbl{
+  position:static;background:#fff;color:#1a1a1a!important;
+  padding:12px 2px 0;font-weight:600;letter-spacing:0;
+}
+.mach-card .lbl small{
+  color:#b30f1a!important;opacity:1!important;font-weight:700;
+  letter-spacing:.06em;text-transform:uppercase;
+}
+.mach-note{color:#6b6b6b!important}
+
+/* company facts panel */
+.facts{background:#fff!important;border:1px solid #e3e3e3;border-radius:8px;color:#1a1a1a}
+.facts h3{color:#0b1f4b!important}
+.fact{background:#fff!important;border-bottom:1px solid #ededed}
+.fact span{color:#5c5c5c!important}
+.fact span:last-child{color:#1a1a1a!important;font-weight:600}
+.fact:last-child{border-bottom:none}
+
+/* footer: light sitemap, all dark type */
+footer{background:#f7f7f7!important;color:#3f3f3f!important}
+footer .brand{color:#0b1f4b!important}
+footer .tag{color:#0b1f4b!important;letter-spacing:.08em}
+footer p,footer p a,footer .tag p,footer .tag p a{color:#0b1f4b!important}
+footer p{color:#3f3f3f!important}
+footer small,footer .credit,footer p[style*="font-size"]{color:#6b6b6b!important}
+footer img{background:#fff!important}
+
+/* buttons: solid navy, white label, everywhere */
+.btn,.btn.big,.btn.dark{
+  background:#0b1f4b!important;color:#fff!important;
+  border:1px solid #0b1f4b!important;border-radius:4px!important;
+  font-weight:600!important;text-shadow:none!important;
+}
+.btn:hover,.btn.big:hover,.btn.dark:hover{background:#16336e!important;border-color:#16336e!important}
+.btn.ghost{background:#fff!important;color:#0b1f4b!important;border:1px solid #0b1f4b!important}
+.btn.ghost:hover{background:#f0f0f0!important}
+
+/* the one accent word in the headline */
+.hero h1 span{color:#b30f1a!important}
 </style>
 </head>
 <body>
@@ -845,41 +896,7 @@ document.getElementById('quoteForm').addEventListener('submit',function(e){
 });
 if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js')}
 </script>
-<section id="derycode-network" aria-label="Websites like this">
-<style>
-#derycode-network{all:initial;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;box-sizing:border-box}
-#derycode-network *,#derycode-network *::before,#derycode-network *::after{box-sizing:border-box}
-#derycode-network{display:block;background:#0b1220;color:#e8edf6;padding:40px 16px 28px;margin:0}
-#derycode-network .dcw{max-width:1100px;margin:0 auto}
-#derycode-network h2{font-size:clamp(18px,3vw,26px);margin:0 0 6px;color:#fff;font-weight:700}
-#derycode-network .dcsub{margin:0 0 22px;font-size:15px;color:#aab7cc;line-height:1.5}
-#derycode-network .dcsub a{color:#00d4ff;font-weight:700;text-decoration:none}
-#derycode-network .dcsub a:hover{text-decoration:underline}
-#derycode-network .dcgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
-#derycode-network .dcsite{display:block;background:#121c31;border:1px solid #22314e;border-radius:12px;padding:14px 16px;text-decoration:none;transition:transform .15s ease,border-color .15s ease}
-#derycode-network .dcsite:hover{transform:translateY(-2px);border-color:#0a84ff}
-#derycode-network .dcsite b{display:block;color:#fff;font-size:15px;margin-bottom:4px;text-decoration:none}
-#derycode-network .dcsite span{color:#93a3bd;font-size:13px;line-height:1.4;text-decoration:none}
-#derycode-network .dcfoot{margin-top:22px;padding-top:14px;border-top:1px solid #22314e;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center}
-#derycode-network .dcbrand{color:#a7b4c4;font-size:13px}
-#derycode-network .dcbrand a{color:#7cc0ff;font-weight:600;text-decoration:none}
-#derycode-network .dcwa{background:#0063cc;color:#fff;border-radius:999px;padding:10px 18px;font-size:14px;font-weight:700;text-decoration:none}
-#derycode-network .dcwa:hover{background:#0057b8}
-@media(max-width:520px){#derycode-network .dcfoot{flex-direction:column;align-items:flex-start}}
 
-</style>
-<div class="dcw">
-<h2>Websites Like This</h2>
-<p class="dcsub">Want a professional website like Bagu General Enterprises's for your business? Built by DeryCode. WhatsApp <a href="https://wa.me/256762306675" target="_blank" rel="noopener">0762306675</a></p>
-<div class="dcgrid">
-<a class="dcsite" href="https://derycode.online" target="_blank" rel="noopener"><b>DeryCode Technologies</b><span>Software, AI & Blockchain company in Uganda</span></a><a class="dcsite" href="https://tropicalgardenshotelkyenjojo.com" target="_blank" rel="noopener"><b>Tropical Gardens Hotel Kyenjojo</b><span>Rooms, restaurant, conferences & wedding gardens</span></a><a class="dcsite" href="https://nuwe-rugaba.vercel.app" target="_blank" rel="noopener"><b>Nuwe Rugaba Machinery</b><span>Water pumps, generators & construction equipment</span></a><a class="dcsite" href="https://sageco-evergreen.vercel.app" target="_blank" rel="noopener"><b>Sageco Evergreen</b><span>Real estate & investment company, Uganda</span></a><a class="dcsite" href="https://deryaccount.vercel.app" target="_blank" rel="noopener"><b>DeryAccount</b><span>Simple offline-first business accounting</span></a><a class="dcsite" href="https://steadycompanyltd.com" target="_blank" rel="noopener"><b>Steady Company (U) Ltd</b><span>Phone distributor & electronics, Fort Portal</span></a><a class="dcsite" href="https://bagulegacyhomes.online" target="_blank" rel="noopener"><b>Bagu Legacy Homes</b><span>Comfortable homestay accommodation, Fort Portal</span></a><a class="dcsite" href="https://school-sync-manager.vercel.app" target="_blank" rel="noopener"><b>School Sync Manager</b><span>School fees & student records system, Uganda</span></a><a class="dcsite" href="https://asiimwe3.github.io/buildcalc-ug/" target="_blank" rel="noopener"><b>BuildCalc UG</b><span>Construction materials calculator for Uganda</span></a><a class="dcsite" href="https://petersmedicare.online" target="_blank" rel="noopener"><b>Peters Medicare Services</b><span>Quality, affordable clinic in Kyenjojo</span></a><a class="dcsite" href="https://western-youth-tech-foundation.vercel.app" target="_blank" rel="noopener"><b>Western Youth Tech Foundation</b><span>Youth tech skills & innovation nonprofit</span></a>
-</div>
-<div class="dcfoot">
-<div class="dcbrand">Websites built by <a href="https://derycode.online" target="_blank" rel="noopener">DeryCode Technologies</a></div>
-<a class="dcwa" href="https://wa.me/256762306675" target="_blank" rel="noopener">WhatsApp 0762306675 to get yours</a>
-</div>
-</div>
-</section>
 
 <div id="dcx-popup" style="display:none;position:fixed;bottom:18px;right:16px;z-index:99999;max-width:260px;width:calc(100% - 32px);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif">
 <div style="position:relative;background:#0b1220;color:#fff;border:1px solid #22314e;border-radius:14px;overflow:hidden;box-shadow:0 12px 32px rgba(0,0,0,.35)">

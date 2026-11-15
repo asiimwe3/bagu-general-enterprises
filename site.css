@@ -103,3 +103,21 @@ footer{background:var(--surface-2);border-top:1px solid var(--line);color:var(--
 footer a{color:#0b1f4b;text-decoration:none}
 footer a:hover{text-decoration:underline}
 details{border:1px solid var(--line);border-radius:8px;background:#fff}
+
+/* ===== v20: contrast repair for the inner pages =====
+   h1 was still white from the dark-hero era, and the footer kept its dark
+   palette while the clean pass made it light. Both fixed with explicit pairs. */
+.hero-mini{background:#fff!important;color:#1a1a1a!important}
+.hero-mini h1{color:#0b1f4b!important}
+.hero-mini p,.hero-mini .lead{color:#4a4a4a!important}
+.hero-mini .kicker{color:#5c5c5c!important;background:#f2f2f2!important;border:1px solid #e3e3e3}
+footer{background:#f7f7f7!important;color:#3f3f3f!important;border-top:1px solid #e3e3e3!important}
+footer a,footer a:hover{color:#0b1f4b!important}
+footer h4{color:#0b1f4b!important}
+footer span,footer p,footer small,footer div{color:#4a4a4a!important}
+footer .copy,footer .credit{color:#6b6b6b!important}
+.btn,.btn.big{background:#0b1f4b!important;color:#fff!important;border:1px solid #0b1f4b!important;border-radius:4px!important}
+.btn:hover{background:#16336e!important}
+
+.btn.ghost{background:#fff!important;color:#0b1f4b!important;border:1px solid #0b1f4b!important}
+.btn.ghost:hover{background:#f0f0f0!important;color:#0b1f4b!important}
